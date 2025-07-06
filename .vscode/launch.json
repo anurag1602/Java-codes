@@ -1,0 +1,57 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Constructor_Challenge",
+            "request": "launch",
+            "mainClass": "Constructor_Challenge",
+            "projectName": "JavaforPlacement_7f1fcd72"
+        },
+        {
+            "type": "java",
+            "name": "ComplexExample",
+            "request": "launch",
+            "mainClass": "ComplexExample",
+            "projectName": "JavaforPlacement_7f1fcd72"
+        },
+        {
+            "type": "java",
+            "name": "complexaddsub",
+            "request": "launch",
+            "mainClass": "complexaddsub",
+            "projectName": "JavaforPlacement_7f1fcd72"
+        },
+        {
+            "type": "java",
+            "name": "cellphone",
+            "request": "launch",
+            "mainClass": "cellphone",
+            "projectName": "JavaforPlacement_7f1fcd72"
+        },
+        {
+            "type": "java",
+            "name": "allfactors",
+            "request": "launch",
+            "mainClass": "allfactors",
+            "projectName": "JavaforPlacement_7f1fcd72"
+        },
+        {
+            "type": "java",
+            "name": "a",
+            "request": "launch",
+            "mainClass": "a",
+            "projectName": "JavaforPlacement_7f1fcd72"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
