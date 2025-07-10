@@ -1,6 +1,6 @@
 import java.util.Scanner;
 class ShoppingList {
-    public static String list(int itemcode){                 //static 
+    public String list(int itemcode){                 //static 
         String itemName = " ";
         switch(itemcode) {
             case 1 : 
@@ -31,7 +31,7 @@ class ShoppingList {
 class ShoppingCart extends ShoppingList {
     
 
-    public static double price(String itemName){
+    public double price(String itemName){
         double itemPrice = 0;
         if(itemName == "Fruits"){
             itemPrice = 40;
@@ -62,7 +62,7 @@ class wallet extends ShoppingCart {
 
 
     public void bill(double itemPrice){
-        if(itemPrice<wallet_balance){
+        if(itemPrice<=wallet_balance){
 
             System.out.println("Your current wallet balance is :"+wallet_balance);
             System.out.println("thanks for shopping");
@@ -70,11 +70,11 @@ class wallet extends ShoppingCart {
 
         }else if(itemPrice>wallet_balance) {
 
-                System.out.println("Your current wallet balance is :"+wallet_balance);
-                System.out.println("Your wallet balance is low !!");
+            System.out.println("Your current wallet balance is :"+wallet_balance);
+            System.out.println("Your wallet balance is low !!");
                 
-                double rechargeamount = itemPrice - wallet_balance;
-                System.out.println("You need to recharge with "+rechargeamount);
+            double rechargeamount = itemPrice - wallet_balance;
+            System.out.println("You need to recharge with "+rechargeamount);
 
 
 
@@ -104,7 +104,7 @@ class wallet extends ShoppingCart {
     public void recharge(double amount){
         wallet_balance = wallet_balance + amount;
         System.out.println("Your reacharged wallet balance is "+ wallet_balance);
-        //bill(itemPrice);                         // Now after the recharging the wallet i want to call the bill() method to shop
+        bill(wallet_balance);                        // Now after the recharging the wallet i want to call the bill() method to shop
     }
 }
 
@@ -115,7 +115,7 @@ class wallet extends ShoppingCart {
 
 
 
-class InheritanceChallenge {
+public class InheritanceChallenge {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
